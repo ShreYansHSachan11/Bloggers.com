@@ -43,6 +43,10 @@
     margin: 0px 77px;
     font-size: 18px;
 }
+.nav-left img{
+    width:90px;
+    height:60px;
+}
 .nav-left a{
     text-decoration: none;
     color:black;
