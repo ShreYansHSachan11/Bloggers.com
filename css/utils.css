@@ -25,6 +25,10 @@
 .m-auto {
     margin: auto;
 }
+.mg-2{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
 
 .form-input {
     padding: 1px 5px;
