@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no" />
+    <title>Bloggers-structuring ideas</title>
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css">
+  </head>
+  <body>
+    
+    <nav class="navigation maxwidth-0 m-auto" id="nav">
+      <div class="nav-left" id="nav-left">
+        <p>Blogger.com</p>
+        <ul id="ul">
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Creator</a></li>
+          <li><a href="/">Entrepreneurship</a></li>
+          <li><a href="/">Tech</a></li>
+          <li><a href="/">About</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <input class="form-input" type="text" placeholder="Article search" />
+        <button class="btn">Search</button>
+      </div>
+    </nav>
+    <div class="content maxwidth-1 m-auto mg-2" id="content">
+      <div class="content-left">
+        <h2 id="center">Creator and Blogger</h2>
+        <p id="hidden">
+          Hi , I’m Shreyansh! I write about entrepreneurship and being a
+          full-time creator. Blogger is a website which lets you submit an
+          article which can be later featured on this website after passing
+          certain criteria.
+        </p>
+      </div>
+      <div class="box mg-2">
+        <button class="btn" onclick="plusDivs(-1)">&#10094; </button>
+        <img id="content-img" src="images/night.jpg" alt="">
+        <button class="btn" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    </div>
+    
+    <h2 class="m-auto maxwidth-1 font1 ">Featured</h2>
+    <div class="home-articles maxwidth-1 m-auto font1 mg-2" id="featured">
+      <div class="card" id="card-1">
+        <div class="card-img1">
+          <img src="images/Teamwork_CONTENT_Typography_generated.jpg" alt="" />
+        </div>
+        <div class="card-content font1" id="cardcontent-1">
+          <h2>The History Of Web Design</h2>
+          <span>Author Name</span>
+          <span>July 27, 2022</span>
+        </div>
+      </div>
+      <div class="card" id="card-2">
+        <div class="card-img2">
+          <img src="images/Teamwork_CONTENT_Typography_generated.jpg" alt="" />
+        </div>
+        <div class="card-content font1" id="cardcontent-2">
+          <h2>7 Ways To Improve Website Usability </h2>
+          <span>Author Name</span>
+          <span>July 27, 2022</span>
+        </div>
+      </div>
+      <div class="card" id="card-3">
+        <div class="card-img3">
+          <img src="images/Teamwork_CONTENT_Typography_generated.jpg" alt="" />
+        </div>
+        <div class="card-content font1" id="cardcontent-3">
+          <h2>Must Have Tools For Web Designers</h2>
+          <span>Author Name</span>
+          <span>July 27, 2022</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="m-auto maxwidth-1 font1  ">Latest</h2>
+    <div class="home-articles maxwidth-1 m-auto font1 mg-2 color-1" id="latest">
+      <div class="latest-card">
+        <div class="latest-card-img1">
+          <img src="images/Teamwork_CONTENT_Typography_generated.jpg" alt="" />
+        </div>
+        <div class="latest-card-content font1" >
+          <h2>10 Great Examples Of Responsive Websites</h2>
+          <span>Author Name</span>
+          <span>July 27, 2022</span>
+        </div>
+      </div>
+      <div class="latest-card">
+        <div class="latest-card-img2">
+          <img src="images/Teamwork_CONTENT_Typography_generated.jpg" alt="" />
+        </div>
+        <div class="latest-card-content font1" >
+          <h2>Quick Tips About Blogging</h2>
+          <span>Author Name</span>
+          <span>July 27, 2022</span>
+        </div>
+      </div>
+      <div class="latest-card">
+        <div class="latest-card-img3">
+          <img src="images/Teamwork_CONTENT_Typography_generated.jpg" alt="" />
+        </div>
+        <div class="latest-card-content font1" >
+          <h2>Must Have Tools For Web Designers</h2>
+          <span>Author Name</span>
+          <span>July 27, 2022</span>
+        </div>
+      </div>
+      <div class="latest-card">
+        <div class="latest-card-img3">
+          <img src="images/Teamwork_CONTENT_Typography_generated.jpg" alt="" />
+        </div>
+        <div class="latest-card-content font1" >
+          <h2>Ways To Improve Website Accessibility</h2>
+          <span>Author Name</span>
+          <span>July 27, 2022</span>
+        </div>
+      </div>
+      <div class="latest-card">
+        <div class="latest-card-img3">
+          <img src="images/Teamwork_CONTENT_Typography_generated.jpg" alt="" />
+        </div>
+        <div class="latest-card-content font1" >
+          <h2>The History Of Web Design</h2>
+          <span>Author Name</span>
+          <span>July 27, 2022</span>
+        </div>
+      </div>
+      <div class="latest-card">
+        <div class="latest-card-img3">
+          <img src="images/Teamwork_CONTENT_Typography_generated.jpg" alt="" />
+        </div>
+        <div class="latest-card-content font1" >
+          <h2>The Designers Who Changed The Web</h2>
+          <span>Author Name</span>
+          <span>July 27, 2022</span>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe maxwidth-1 m-auto font1 mg-2">
+      <h1 class="font1 " id="h1">A Monthly Post Delivered Straight To Your Inbox</h1>
+      <div class="email" id="email">
+        <input class="email-field" id="email-field"type="text" name="" id="" placeholder="Enter Your Email">
+        <button class="btn-1">Subscribe</button>
+      </div>
+      <p class="font1" id="para">Zero spam , Just the Good Stuff </p>
+    </div>
+    <div class="footer maxwidth-1 m-auto font1">
+      <h2 class="font1">Thank you for the Visit!!!</h2>
+      <div class="footer-container" id="footer-container">
+        <div class="pages mg-lr">
+          <ul>
+            <h3>Pages</h3>
+            <li><a href="">Home</a> </li>
+            <li><a href="">About</a> </li>
+            <li><a href="">Subscribe</a> </li>
+          </ul>
+        </div>
+        <div class="categories mg-lr">
+          <ul>
+            <h3>Categories</h3>
+            <li><a href="">Creator</a> </li>
+            <li><a href="">Entrepreneurship</a> </li>
+            <li><a href="">Technology</a> </li>
+          </ul>
+          </div>
+          <div class="admin mg-lr">
+            <ul>
+              <h3>Admin</h3>
+              <li><a href="">Style guide</a> </li>
+              <li><a href="">Licenses</a> </li>
+              <li><a href="">Password</a> </li>
+            </ul>
+        </div>
+      </div>
+      <div class="social-icon">
+        <div class="social-item">
+            <a href="https://www.instagram.com/l.shreyansh.l/" target="_blank">
+                <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png">
+            </a>
+        </div>   
+        <div class="social-item">
+            <a href="https://github.com/ShreYansHSachan11" target="_blank">
+                <img src="https://img.icons8.com/fluent/48/000000/github.png">
+            </a>
+        </div>  
+        <div class="social-item">  
+            <a href="https://www.linkedin.com/in/shreyansh-sachan-73b875245/" target="_blank">
+                <img src="https://img.icons8.com/color/48/000000/linkedin.png">
+            </a>
+        </div>
+    </div>
+    <p>© Shreyansh Sachan</p>
+    </div>
+  </body>
+</html>

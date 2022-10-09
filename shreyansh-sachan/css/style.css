@@ -1,0 +1,531 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navigation {
+    font-family: var(--font1);
+    height: 34px;
+    /* background-color: rgb(7, 48, 48); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-self: center; */
+    /* align-self: center; */
+    top: 0px;
+    /* left: 150px; */
+    padding: 13px 0px;
+    position: sticky;
+    /* position: fixed; */
+    background-color: azure;
+    z-index: 1;
+    /* max-width: 100vw; */
+    
+}
+
+.content {
+    height: 621px;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px 0px;
+    position: relative;
+}
+
+.content::after {
+    content: "";
+    background-image: url("../images/files-5560762.jpg");
+    position: absolute;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 54vh;
+    /* border-radius: 235px 0px 0px 0px; */
+    opacity: 0.5;
+    filter: invert();
+    z-index: -1;
+}
+
+.footer {
+    height: 120px;
+    /* background-color: aquamarine; */
+}
+
+.nav-left {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0px 40px;
+}
+.nav-left p{
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+    
+}
+.nav-right{
+    display: flex;
+}
+.form-input{
+    height:31px;
+    width:140px;
+    /* text-align: center; */
+}
+
+.nav-left ul li {
+    list-style: none;
+    margin: 0px 30px;
+    font-size: 20px;
+    font-family: var(--font3);
+
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 30px;
+    font-size: 18px;
+}
+
+.nav-left img {
+    width: 90px;
+    height: 60px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav-left a:hover {
+    color: var(--main-bg-color);
+    font-weight: bolder;
+
+}
+
+.content-left {
+    font-family: var(--font1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+
+}
+
+.content-left p {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0px 30px 0px 0px;
+    text-align: center;
+    position: relative;
+    top:20px;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+}
+.content-left h2{
+    padding:0px 10px;
+    position: relative;
+    top:20px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box img {
+    max-width: 70vw;
+    height: 54vh;
+    margin: 20px 0px;
+    border-radius: 20px 20px;
+    border: 10px inset #848181;
+}
+
+.box button {
+    height: 50px;
+    border: none;
+
+}
+
+.home-articles {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+#featured{
+    background-image: url("../images/vecteezy_trendy-abstract-background-with-fluid-shapes-and-floral_9302808.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 2px;
+    width: 322px;
+    margin: 0px 27px 30px;
+    transition: all 0.3s ease-out;
+}
+.card:hover{
+    cursor: pointer;
+    scale:0.95;
+    filter:invert();
+}
+
+#card-1 {
+    box-shadow: 2px 2px 3px 1px #fbcad2;
+}
+
+#card-2 {
+    box-shadow: 2px 2px 3px 1px rgb(153 241 241);
+}
+
+#card-3 {
+    box-shadow: 2px 2px 3px 1px #c0caff;
+}
+
+.card img {
+
+    width: 318px;
+    border: 2px solid black;
+    border-radius: 256px 0px;
+    
+}
+
+
+
+.card-img1{
+    background-color:#fbcad2 ;
+    width: 322px;
+    height: 216px;
+}
+.card-img2{
+    background-color: rgb(153 241 241);
+    width: 322px;
+    height: 216px;
+}
+.card-img3{
+    background-color: #c0caff;
+    width: 322px;
+    height: 216px;
+}
+
+.card-content {
+    padding: 0px 15px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* border-radius: 18px 5px; */
+}
+
+#cardcontent-1 {
+    background-color: #fbcad2;
+
+}
+
+#cardcontent-2 {
+    background-color: rgb(153 241 241);
+}
+
+#cardcontent-3 {
+    background-color: #c0caff;
+}
+
+.latest-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 2px;
+    width: 322px;
+    margin: 0px 27px 40px;
+    box-shadow: 2px 2px 3px 1px #2f2e2e;
+    transition: all 0.3s ease-out;
+}
+.latest-card:hover{
+    scale: 0.93;
+    /* filter: saturate(3); */
+    background-color: darkslategray;
+}
+.latest-card img {
+
+    width: 318px;
+    
+    border: 1px solid black;
+    /* border-radius: 256px 0px; */
+    
+}
+.latest-card-content {
+    padding: 0px 15px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(10 49 49 / 86%);
+
+    /* border-radius: 18px 5px; */
+}
+#latest{
+    background-color: #5aa7d914;
+}
+.subscribe{
+    position: relative;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe h1{
+    text-align: center;
+    font-size: 46px;
+    padding:0px 200px;
+    margin:30px 0px;
+}
+.subscribe p{
+    text-align: center;
+    color: #848181;
+    position: relative;
+    left:-130px;
+}
+.email-field{
+    text-align: center;
+    width: 453px;
+    height: 50px;
+    font-family: var(--font1);
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+.email{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.btn-1{
+    width: 246px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 0px 20px;
+    background-color: #cb1137;
+    color: white;
+    font-family: var(--font1);
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.3s ease-in-out;
+    
+}
+.btn-1:hover{
+  color:#cb1137;
+  background-color: transparent;
+}
+
+.subscribe::before {
+    content: "";
+    background-image: url("../images/vecteezy_trendy-abstract-background-with-fluid-shapes-and-floral_9302808.jpg");
+    position: absolute;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 54vh;
+    /* border-radius: 235px 0px 0px 0px; */
+    opacity: 0.5;
+    /* filter: invert(); */
+    z-index: -1;
+}
+.footer h2{
+    text-align: center;
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0px;
+}
+
+.footer-container li{
+    
+    font-size: 20px;
+    color:darkslategray;
+    list-style: none;
+   
+}
+.footer-container a{
+    text-decoration: none;
+}
+.footer p{
+    text-align: center;
+    font-size: 24px;
+    
+}
+.social-icon{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    padding: 0;
+    margin: 0px 40px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-item{
+    margin:0px 20px;
+  }
+  .footer h3{
+    color:#161616;
+    font-weight: 600;
+  }
+  @media screen and (max-width: 1188px) {
+  body{
+    background-color: rgba(144, 238, 144, 0.371);
+  }
+    #ul{
+    flex-direction: column;
+    margin: 0px 0px;
+  }
+  #nav{
+    height: 40vh;
+    flex-direction: column;
+    margin-bottom: 10vh;
+    position: relative;
+    /* position: fixed; */
+    /* left: -100px; */
+    overflow: hidden;
+  }
+  #hidden{
+    display: none;
+
+  }
+  #center{
+    text-align: center;
+  }
+  #nav-left{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#content-img{
+    height:400px;
+    width:auto
+}
+#content{
+    margin-bottom: 40px;
+    
+}
+#content::after{
+    display: none;
+}
+#featured{
+    background-image: none;
+}
+#email{
+    flex-direction: column;
+}
+#para{
+    text-align: center;
+    left:0px;
+
+}
+#email-field{
+    margin-bottom: 20px;
+    width:70vw;
+}
+  }
+  @media screen and (max-width: 1192px) {
+    #h1{
+     font-size: 25px;
+     padding:0px 0px;
+    }
+    #footer-container{
+        flex-direction: column;
+        text-align: center;
+    }
+        
+    }
+  
+  @media  (min-width: 640px)and(max-width: 1192px) {
+    body {
+      /* background-color: lightgreen; */
+    }
+    #nav{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0px;
+        height:100px;
+        margin-bottom: 23px;
+        /* margin-top: 20px; */
+        background-color: azure;
+    }
+    #nav-left{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #content-img{
+        height:400px;
+        width:auto
+    }
+    #content{
+        margin-bottom: 100px;
+        
+    }
+    #content::after{
+        display: none;
+    }
+    #featured{
+        background-image: none;
+    }
+    #email{
+        flex-direction: column;
+    }
+    #para{
+        text-align: center;
+        left:0px;
+
+    }
+    #email-field{
+        margin-bottom: 20px;
+        width:70vw;
+    }
+    
+  }
+
+/* .content-right{
+    width:50%;
+}
+.content-right img{
+    width: 200px;
+     height:150px; 
+} */
