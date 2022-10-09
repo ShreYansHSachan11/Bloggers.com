@@ -88,7 +88,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px 180px;
+    margin: 0px 30px;
     font-size: 18px;
 }
 
@@ -123,12 +123,16 @@ html{
     font-size: 20px;
     padding: 0px 30px 0px 0px;
     text-align: center;
+    position: relative;
+    top:20px;
     /* display: flex; */
     /* justify-content: space-evenly; */
     /* align-items: center; */
 }
 .content-left h2{
     padding:0px 10px;
+    position: relative;
+    top:20px;
 }
 
 .box {
@@ -397,6 +401,125 @@ html{
   .footer h3{
     color:#161616;
     font-weight: 600;
+  }
+  @media screen and (max-width: 1188px) {
+  body{
+    background-color: rgba(144, 238, 144, 0.371);
+  }
+    #ul{
+    flex-direction: column;
+    margin: 0px 0px;
+  }
+  #nav{
+    height: 40vh;
+    flex-direction: column;
+    margin-bottom: 10vh;
+    position: relative;
+    /* position: fixed; */
+    /* left: -100px; */
+    overflow: hidden;
+  }
+  #hidden{
+    display: none;
+
+  }
+  #center{
+    text-align: center;
+  }
+  #nav-left{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#content-img{
+    height:400px;
+    width:auto
+}
+#content{
+    margin-bottom: 40px;
+    
+}
+#content::after{
+    display: none;
+}
+#featured{
+    background-image: none;
+}
+#email{
+    flex-direction: column;
+}
+#para{
+    text-align: center;
+    left:0px;
+
+}
+#email-field{
+    margin-bottom: 20px;
+    width:70vw;
+}
+  }
+  @media screen and (max-width: 1192px) {
+    #h1{
+     font-size: 25px;
+     padding:0px 0px;
+    }
+    #footer-container{
+        flex-direction: column;
+        text-align: center;
+    }
+        
+    }
+  
+  @media  (min-width: 640px)and(max-width: 1192px) {
+    body {
+      /* background-color: lightgreen; */
+    }
+    #nav{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0px;
+        height:100px;
+        margin-bottom: 23px;
+        /* margin-top: 20px; */
+        background-color: azure;
+    }
+    #nav-left{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #content-img{
+        height:400px;
+        width:auto
+    }
+    #content{
+        margin-bottom: 100px;
+        
+    }
+    #content::after{
+        display: none;
+    }
+    #featured{
+        background-image: none;
+    }
+    #email{
+        flex-direction: column;
+    }
+    #para{
+        text-align: center;
+        left:0px;
+
+    }
+    #email-field{
+        margin-bottom: 20px;
+        width:70vw;
+    }
+    
   }
 
 /* .content-right{
